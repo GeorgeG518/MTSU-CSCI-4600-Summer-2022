@@ -45,20 +45,19 @@ This will expand as I go, really just a overhead view
 * Has more fortran code and also an online tar archive of computational physics stuff
 * It's a little over my head, but it has some CFD, ODE/PDE and heat transfer problems with it that might be interesting to look at
 
-### Python Programming and Numerical Methods for Engineers and Scientists by Kong, Siayen, Bayen
+### Python Programming and Numerical Methods: A Guide for Engineers and Scientists by Kong, Siauw, Bayen
 * Not going to use the python programming tutorial in the first half...feel confident that I'm passed that point
 * I WILL use the chapters on numerical methods and c interfacing
 
 ### Linear Algebra 2nd Edition by Lipschutz
-* I got this book at Goodwill a few years ago before I went to college. Haven't had 
-* LA so it will be used as reference for any kind of stuff like that
+* I got this book at Goodwill a few years ago before I went to college. I haven't had a LA class so it will be used as reference for any kind of stuff pertaining to it that
 
 	
 ## Online:
 	
 ### InteloneAPI stuff:
 * Docs for each compiler, library, component: 
-* https://www.intel.com/content/www/us/en/developer/tools/oneapi/components.html#gs.z8ddr9
+  * https://www.intel.com/content/www/us/en/developer/tools/oneapi/components.html#gs.z8ddr9
 			
 ### Markdown Text:
 * https://www.markdownguide.org/basic-syntax/
@@ -66,12 +65,79 @@ This will expand as I go, really just a overhead view
 
 	
 # 3. General Rundown of Modules and goals by the end of the summer *SUBJECT TO MOST EXPANSION*:
+## Every Module will have a README	
+<p>The point of these are to learn markdown text formatting as that would be pretty useful, but also make writing the report easier. I want it to be a matter of copy and pasting instead of trying to write a full blown paper at the end of the summer.<p>	
 	
-<p>The point of these are to learn markdown text formatting as that would be pretty useful, but also make writing the report easier. I want it to be a matter of copy and pasting instead of trying to write a full blown paper at the end of the summer.<p>
+These will Require the Following:
+* Each file's purpose in that module
+* What I learned/how I learned it
+* How to run/prerequisites
+* Short time/date log of when I worked on things for accountability
+
+## Module Outline (Tentative) May 8th-August 5th
+I want to start a week early because I'm bored but also for some wiggle room. Ideally want to be done by July 31st. (12-13 Weeks over 4 modules) to have a week to prepare the paper.
 	
-## Every Module Requires the Following in a README:
-* Each file's purpose
-* What I learned
-* how to run
-* Short log of when I worked on things
+### Module One: Fortran (May 8th-May 29th)
+Fortran still has its use cases after all of these years, and knowing the syntax and semantics would place me in a good position at work.
+
+I want to cover the following:
+* Short history of Fortran
+* Syntax
+  * Free vs Fixed form, how to specify which is being used
+  * Math Expression syntax
+  * Strings
+* I/O
+* Loops
+* Logic
+* Key Differences from C [arrays, data types, program structure]
+
+This module will be considered "done" with a capstone project. It will essentially be a copy of a project I did for discrete a few years ago
+* Read in matrix(ces) with dimensions specified (Through file I/O)
+* Read in an operation
+  * Operations: Addition/Subtraction, Multiplication, Boolean
+  * New Operation: Gaussian Elimination! <- This one will take the most time.
+* Output these to a file
+
+Not going to really care about error checking like the other project.
+					    
+### Module Two: Speeding Up Python (May 29-June 19th)
+                                            
+Python is heavily used at work, and one of the most common things done with it is boosting speed.
+
+This module will be more "research" focused. I want to look at all the ways you can boost the speed of python.
+* Threading
+* Multiprocessing
+* C/Fortran Interfacing
+* Numba (JIT Compiled Python)
+* Cython
+* GPU Offloading                                            
+* Maybe reading into some MPI stuff as a primer for the fall
+
+The ideal capstone project would be to develop a program that can be ran using every method, and then have their timing results compared. 
+Here\'s a few options: https://www.cs.cmu.edu/~scandal/nesl/algorithms.html
+                                            
+I like the idea of using Dr. Butler\'s convex hull program we did for systems. I can write up the algorithm from memory [unless I can get my CS account back] then implement it in python. As I research, I can just reimplement it with the new methods and keep them all in one notebook. 
+  
+### Module Three: The Math/Numerical Analysis Unit (June 19th-July 10th)
+Math is a huge part of my job, and I could definitely go for some improvement. I dread this module.
+* Explore some ODE/PDE calculation in python and Fortran
+* How does that works with various libraries? 
+* Numerical methods like finite differences or Euler\'s Method
+* Fourier transformations, interpolation, taylor series
+* Use cases for all of these
+
+                                            
+### Module Four: Other Useful Stuff (July 10th-July 24th)
+This module is still a bit in the air...
+* I could learn Julia
+* Python data visualization: matplotlib, seaborne
+* Data manipulation
+* Maybe CMake if i don\'t end up using it throughout the study
+                                            
+### Paper Week: (July 24th-July 31st)
+
+	
+
+
+
 
