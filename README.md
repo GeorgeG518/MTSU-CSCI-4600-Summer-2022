@@ -55,6 +55,9 @@ This will expand as I go, really just a overhead view
 	
 ## Online:
 	
+### Fortran Reference
+* https://en.wikibooks.org/wiki/Fortran
+	
 ### InteloneAPI stuff:
 * Docs for each compiler, library, component: 
   * https://www.intel.com/content/www/us/en/developer/tools/oneapi/components.html#gs.z8ddr9
