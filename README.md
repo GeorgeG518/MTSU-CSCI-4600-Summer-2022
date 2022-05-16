@@ -4,13 +4,7 @@ This will expand as I go, really just a overhead view
 ## Installed Packages:
 * git bash
   * Very useful because it gives me git, linux CLI, and linux workflows all on windows
-  * I know WSL gives me all of that, but I'd have to doubly install oneAPI and Anaconda...not about that
-
-* IntelOneAPI HPC package
-  * A godsend...has C, C++, Fortran compilers using intel technology all in one install.
-  * HPC package is required because it allows me to offload to GPU, use MPI, and compile Fortran.
-  * Above all...it is FREE!
-
+ 
 * Julia lang [if I have time]
   * If I have time by the end of the semester, I want to learn Julia.
   * It appears that it is in a position to find use at the base if more people know about it...
@@ -21,8 +15,9 @@ This will expand as I go, really just a overhead view
   * I will not be using the anaconda installed with oneAPI
 
 * WSL Ubuntu
-  * Not sure if i need this yet actually 
-
+  * Using this for all of my compilation as well as workflow. 
+  * Configured to use bash
+ 
 ## System Information
 ### Processor: AMD Ryzen 5 5600X w/ 6 cores overclocked to 4.1ghz
 ### RAM: 32gb of ram
@@ -57,10 +52,6 @@ This will expand as I go, really just a overhead view
 	
 ### Fortran Reference
 * https://en.wikibooks.org/wiki/Fortran
-	
-### InteloneAPI stuff:
-* Docs for each compiler, library, component: 
-  * https://www.intel.com/content/www/us/en/developer/tools/oneapi/components.html#gs.z8ddr9
 			
 ### Markdown Text:
 * https://www.markdownguide.org/basic-syntax/
