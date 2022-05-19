@@ -18,11 +18,14 @@ This will expand as I go, really just a overhead view
   * Using this for all of my compilation as well as workflow. 
   * Configured to use bash
  
+* gcc
+  * I will be using gfortran for all my compilation
+
 ## System Information
 ### Processor: AMD Ryzen 5 5600X w/ 6 cores overclocked to 4.1ghz
 ### RAM: 32gb of ram
 ### GPU: Nvidia RTX 3060 graphics card
-### Other Notes: <p> AMD has their own compilers optimized for their CPUs, but oneAPI is processor agnostic and way more convenient. Therefore, I will not be using them. They're essentially forks of LLVM anyway. Not sure what this will entail.
+### Other Notes: <p> AMD has their own compilers optimized for their CPUs, but I will not be using them. They're essentially forks of LLVM anyway. Not sure what this will entail.
 <p>
 
 	
