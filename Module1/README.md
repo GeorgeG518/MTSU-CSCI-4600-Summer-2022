@@ -19,6 +19,10 @@ This file basically is a quick demonstration of the differences between function
 
 ## CMakeLists.txt
 This is my build system. It does require you to have Cmake installed, but you can run the following to build the module:
-> cmake CMakeLists.txt
-> make
+```console
+cmake CMakeLists.txt
+make
+```
+
+
 
