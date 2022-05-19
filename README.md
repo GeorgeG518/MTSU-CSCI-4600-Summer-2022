@@ -55,6 +55,7 @@ This will expand as I go, really just a overhead view
 	
 ### Fortran Reference
 * https://en.wikibooks.org/wiki/Fortran
+* https://www.mathcs.emory.edu/~cheung/Courses/561/Syllabus/6-Fortran/
 			
 ### Markdown Text:
 * https://www.markdownguide.org/basic-syntax/
