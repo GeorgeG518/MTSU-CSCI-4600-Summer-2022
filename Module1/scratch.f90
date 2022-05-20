@@ -97,6 +97,10 @@ C This is also allowed
         character:: letter ! only one letter
         character(5)::word ! can only hold 5 characters 
         character(*)::otherword ! The length is determined somewhere else. ??? what is this
+! I learned this through experience: the above types of data  declaration statement must be placed before all
+! statements. They cannot be put in the middle of a function or subroutine or program
+
+!!! ARRAYS
 ! Arrays are declared with this method:
 ! lets say I want to declare an array called numbers that is 50 long and is filled with floats
         real, dimension(50) :: numbers
@@ -117,8 +121,23 @@ C This is also allowed
     numbers(1:50) = 1 ! sets all elements in numbers to 1
     numbers(:)=1 ! equivalent to above
     numbers(2:50:2) = 2 ! sets every even numbered index to 2 start:end:stride
+!
+! Arrays have a few intrinsic functions that support operations:
+! Transpose, pack, reshape
+! Transpose finds the transpose (imagine that) of a matrix. It flips everything over the diagonal
+! In the event of two different dimensioned arrays, the shape will change from n x m to m x n
+! This is probably useful in the event of fortran c interfacing
+    real, dimension(3,4) :: a
+    real, dimension(4,3) :: b
 
-
-
+    b= transpose(a)
+!
+! Pack basically functions like numpy.flatten...it takes a 2d array and makes it one dimensional.
+    real, dimension(12)::c
+    c = pack(b, .true.) ! the mask part is a bit weird to me
+!
+! Reshape takes a one dimensional array and converts it into the shape specified (if it can)
+    a = reshape(c, shape(a))
+    
 
 END PROGRAM

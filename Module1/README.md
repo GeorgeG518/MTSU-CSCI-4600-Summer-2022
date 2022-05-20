@@ -23,6 +23,7 @@ This is my build system. It does require you to have Cmake installed, but you ca
 cmake CMakeLists.txt
 make
 ```
-
+## arrayops.f90
+Array operations in fortran...kind of like a beginning groundwork for the project I do later
 
 
