@@ -8,6 +8,12 @@ Today I took even more notes on fortran datatypes, finished my subvsfunc.f90 fil
 I had to add build files to the .gitignore.
 Today's focus was datatypes, arrays, array slicing, array allocation
 
+## 5/24
+Worked on some control flow stuff, loops, logic, relational operators,
+and just a tiny bit of Input reading. Input reading from files works the exact same as from console,
+but I change the handle from whatever the console's is to whatever my opened file's is. 
+
+
 ------------------------------------------------------------------------------------------------------------------
 
 # File List
@@ -26,4 +32,5 @@ make
 ## arrayops.f90
 Array operations in fortran...kind of like a beginning groundwork for the project I do later
 
-
+## lostsatellite.f
+Some fun toy code to demonstrate how Fortran's freedom can be a little destructive and downright evil..

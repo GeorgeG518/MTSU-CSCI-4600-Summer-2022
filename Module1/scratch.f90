@@ -72,7 +72,7 @@ C This is also allowed
 ! 3. Case INSENSITIVE
 ! 4. Up to 32 Chars in length 
 ! Fortran supports a few data types:
-        integer :: defaultinteger
+        integer :: defaultinteger, i, j, k
         ! Kind allows you to specify byte width of integer
         integer(kind=4)::fourbyteint
         integer(kind=8)::eightbyteint
@@ -93,7 +93,7 @@ C This is also allowed
         ! initial declaration
         real, parameter :: e = 2.718281828459045
 !        
-        logical:: Boolean ! How to declare bools
+        logical:: Boolean, otherBoolean ! How to declare bools [use later]
         character:: letter ! only one letter
         character(5)::word ! can only hold 5 characters 
         character(*)::otherword ! The length is determined somewhere else. ??? what is this
@@ -138,6 +138,86 @@ C This is also allowed
 !
 ! Reshape takes a one dimensional array and converts it into the shape specified (if it can)
     a = reshape(c, shape(a))
-    
 
+!!! Program Control Flow
+! There are a few program control flow statements I should know about, namely loops, conditionals
+! and the ever dreaded GOTO which shows up all the time in classic fortran code
+! The simplest way to do this would be to start with the for loop, and then do to the while loop, but neither really exist in terms of a keyword
+! instead, there are do loops and do while loops which can serve the purpose of both
+! the general form of do loops are the following:
+! do var = start, stop [,step]
+!    stuff and operations
+! end do
+
+  do i = 1, 10
+    print *,numbers(i) 
+  end do
+! While loops are done using do while loops which have the following form:
+! do while(logical expr
+!    some stuff, things, and operations
+! end do
+
+
+ !!! MINI SECTION: Logic
+! logic in fortran is...odd. I wil use the Booleans defined at the top for my work
+! relational operators are not done with > or < == or anything like that, and T or F are not in their normal state.
+! Why did they choose dots...I am not sure.
+! Setting something true or false
+    Boolean = .TRUE.
+    otherBoolean = .false.
+! relational operators cannot be used on booleans
+    (5 .gt. 3) ! true, greater than
+    (5 .lt. 4) ! false, less than
+    (6 .ge. 5) ! True, greater than or equal to
+    (6 .le. 7) ! True, less than or equal to.
+    (5 .eq. 3) ! false
+    (5 .ne. 3) ! true
+
+! logical operators
+    Boolean .and. otherBoolean ! False
+    Boolean .or. otherBoolean ! True
+    .not. otherBoolean  ! True
+! boolean == and != are done this way.
+    Boolean .eqv. .True. ! True
+    Boolean .neqv. .False. ! True
+!
+! now that that is out of the way...
+ do while (Boolean)
+    print *, "Printing forever!"
+ end do  
+!
+! it is worth noting that there are a few special loop keywords.
+    Exit ! like break
+    CYCLE ! like continue
+!
+!!! CONTROL FLOW CONTINUED
+! If statements
+IF Boolean THEN
+    i =5
+ELSE
+    j = 8
+END IF
+
+! ELSEIF
+IF (GRADE<50) THEN
+    letter = 'F'
+ELSE IF (GRADE < 60) THEN
+    letter = 'D'
+ELSE IF (GRADE < 70) THEN
+    letter ='C'
+ELSE IF (GRADE<80) THEN
+    letter = 'B'
+ELSE
+    letter = 'A'
+END IF
+
+! Switch cases
+SELECT CASE (I)
+    CASE(1)
+        letter = 'Y'
+    CASE(2)
+        letter = 'L'
+    CASE DEFAULT
+        LETTER = 'P' ! Still think its hilarious that i can just change cases half way through
+END SELECT
 END PROGRAM
