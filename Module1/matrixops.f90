@@ -34,14 +34,13 @@ MODULE matrix_ops
         acol = size(a,1)
         brow =size(b,2)
         bcol = size(b,1)
-        print *, arow
+        print *, arow, acol, brow, bcol
 
-        DO i=1,arow 
+        DO i=1, arow 
             DO j=1, bcol
                 accumulator=0
                 do k=1, acol
-                    print *, a(i,k), b(k,j)
-                    c(i,j) = C(i,j) + A(I,K)*B(K,J)
+                    C(I,J ) = C(I,j)+A(k,i)*B(j,k)
                 end do
 
             END DO
@@ -84,16 +83,18 @@ PROGRAM MAIN
         OPEN(21, file='in3.dat')
  
         READ(20, *) i, j
-        allocate(mat1(i,j))
+        allocate(mat1(j,i))
         READ(20, *) mat1
-        print *, mat1(1,1) 
+        
         READ(21, *) j, k
-        allocate(mat2(j,k))  
+        allocate(mat2(k,j))  
         READ(21, *) mat2
-        allocate(resultmat(i,k))
+        allocate(resultmat(k,i))
         CALL MYMATMUL(mat1, mat2, resultmat)
-        PRINT *, resultmat 
+        PRINT *, resultmat
 
+        CLOSE(20)
+        CLOSE(21)
     ELSE
        GOTO 1000
     END IF 
