@@ -12,7 +12,10 @@ Today's focus was datatypes, arrays, array slicing, array allocation
 Worked on some control flow stuff, loops, logic, relational operators,
 and just a tiny bit of Input reading. Input reading from files works the exact same as from console,
 but I change the handle from whatever the console's is to whatever my opened file's is. 
-
+ 
+## 5/30
+Started working on the capstone project. Got matrix addition working, but stepping through the array in fortran
+is a bit weird to get used to. Going to come back to it with a fresh set of eyes tomorrow.
 
 ------------------------------------------------------------------------------------------------------------------
 
