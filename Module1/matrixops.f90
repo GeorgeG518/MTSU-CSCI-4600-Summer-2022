@@ -54,13 +54,38 @@ MODULE matrix_ops
             END DO
         END DO
     END SUBROUTINE
-
-    SUBROUTINE gaussianelim(a,b,c)
-        real, dimension(:,:),intent(in)::a,b
+	
+    ! Subroutine to swap rows of the matrix
+    elemental subroutine swap(a, b)
+		! https://quasiengineer.dev/tech/engg/gauss-elimination-in-fortran/#:~:text=Gauss%20Elimination%20is%20a%20well,rule%20or%20Gauss%2DJordan%20method.
+        real, intent(inout) :: a, b
+        real :: temp
+        temp = a
+        a = b
+        b = temp
+    end subroutine swap
+	
+    SUBROUTINE gaussianelim(a,c)
+        ! This, along with the swap routine are borrowed from another code base:
+        ! https://quasiengineer.dev/tech/engg/gauss-elimination-in-fortran/#:~:text=Gauss%20Elimination%20is%20a%20well,rule%20or%20Gauss%2DJordan%20method.
+        real, dimension(:,:),intent(inout)::a
         real,dimension(:,:), intent(inout)::c
-        integer:: i, j , k
-        print *, 'yup'
-
+        real::factor
+        integer:: i, j , m, n, h, k, pos
+        c = a 
+        n = 3 
+            
+        do k =1, n-1
+		! Partial scaled pivoting
+			pos = maxloc( abs(c(k:n, k)/maxval(c(k:n, :), dim=2)), dim=1 )
+			j = k + pos - 1
+			if (.not. j == k) call swap(c(j,:), c(k,:))
+			! Elimination
+			do i = k+1, n
+				factor = c(i,k) / c(k,k)
+				c(i, k:) = c(i, k:) - factor*c(k, k:)
+			end do
+        end do
     END SUBROUTINE
 
     SUBROUTINE checkfile(inputfile)
@@ -142,19 +167,37 @@ PROGRAM MAIN
         end do
 
         deallocate(tempmat)
+        deallocate(mat2)
+        deallocate(mat1)
+        deallocate(resultmat)
+
         CLOSE(20)
         CLOSE(21)
     ELSE IF(CHOICE .eq. 'g' .or. CHOICE .eq. 'G') THEN
 
         CALL checkfile(filename)
         OPEN(20,file=filename)
- 
-        CALL gaussianelim(mat1,mat2,resultmat)
+        READ(20, *) i, j
+        allocate(tempmat(j,i))
+        READ(20,*) tempmat
+
+        allocate(resultmat(i,j))
+        mat1 = transpose(tempmat)
+        deallocate(tempmat)
+
+        CALL gaussianelim(mat1,resultmat)
+        allocate(tempmat(j,i))
+        tempmat = transpose(resultmat)
+
+        print *, "The resulting matrix (Column based) is: "
+        do j=1, size(resultmat,1)
+            print *, tempmat(:,j)
+        end do
+
+       
     ELSE
        GOTO 1000
     END IF 
-    deallocate(mat1)
-    deallocate(mat2)
 
 END PROGRAM
 
