@@ -22,6 +22,7 @@ If i had to rank my languages that I have coded in from my most favorite to leas
 6. HTML
 7. VBA
 8. Assembly
+
 As you can see, Fortran is actually pretty high in the list and I want to keep learning it. I imagine when I learn Julia at the end of the summer, 
 this will change. A lot of work still needs to be done as far as learning more modern coding construct goes...Fortran 2003+ has a lot of new features that
 would probably be really nice to learn, but I did not have time to do so. 
