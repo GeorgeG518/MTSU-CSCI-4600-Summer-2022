@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16) 
+enable_language(C)
+project(Module2 C)
+add_compile_options(-g -OFast)
+add_executable(p1 p1.c)
