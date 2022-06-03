@@ -6,3 +6,9 @@ Module1/cmake_install.cmake
 *.out
 *.swp
 T?
+CMakeCache.txt
+CMakeFiles/
+makefile
+Makefile
+*.mod
+*.ipynb_checkpoints
