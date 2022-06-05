@@ -5,7 +5,6 @@ Module1/subvsfunc.out
 Module1/cmake_install.cmake
 *.out
 *.swp
-T?
 CMakeCache.txt
 CMakeFiles/
 makefile
