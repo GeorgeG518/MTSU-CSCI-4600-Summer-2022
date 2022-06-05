@@ -6,13 +6,13 @@
 #include <math.h>
 
 #define GEN_RAND_3D_PT(MIN,MAX,X,Y,Z)                 \
-  X = (MAX-MIN) * ((float)rand()/RAND_MAX) + MIN;  \
-  Y = (MAX-MIN) * ((float)rand()/RAND_MAX) + MIN;  \
-  Z = (MAX-MIN) * ((float)rand()/RAND_MAX) + MIN;
+  X = (MAX-MIN) * ((double)rand()/RAND_MAX) + MIN;  \
+  Y = (MAX-MIN) * ((double)rand()/RAND_MAX) + MIN;  \
+  Z = (MAX-MIN) * ((double)rand()/RAND_MAX) + MIN;
 struct point{
-	float x;
-	float y;
-	float z;
+	double x;
+	double y;
+	double z;
 };
 
 int main(int argc, char*argv[]){
@@ -28,27 +28,27 @@ int main(int argc, char*argv[]){
 
 	for(int i =0;i<numpoints;i++)
 	{
-		float x, y,z;
+		double x, y,z;
 		GEN_RAND_3D_PT(0,10000,x,y,z);
-        printf("%f\n", x);
-        printf("%f\n", y);
-        printf("%f\n", z);
+//        printf("%f\n", x);
+//        printf("%f\n", y);
+//        printf("%f\n", z);
 
         struct point pointA = {x, y, z};
 		points[i] = pointA;
 	}
 
-	float MAX, MIN; // holds our max and min vals
+	double MAX, MIN; // holds our max and min vals
 	MAX =0;
 	MIN=SIZE_MAX;
 
 	for(int i=0; i<numpoints;i++)
 	{
 		for(int j=i+1; j<numpoints;j++){
-			float xsqrd = powf(points[i].x - points[j].x,2);
-			float ysqrd = powf(points[i].y - points[j].y,2);
-			float zsqrd = powf(points[i].z - points[j].z,2);
-			float distance = xsqrd+ysqrd+zsqrd ;
+			double xsqrd = powf(points[i].x - points[j].x,2);
+			double ysqrd = powf(points[i].y - points[j].y,2);
+			double zsqrd = powf(points[i].z - points[j].z,2);
+			double distance = xsqrd+ysqrd+zsqrd ;
 			if(MAX<distance){
 				MAX=distance;
 			}else if(MIN>distance){

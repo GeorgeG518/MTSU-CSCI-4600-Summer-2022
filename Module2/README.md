@@ -21,13 +21,13 @@ instruction.
 A few years later, I now understand that python does not have to be slow *if you know what you are doing*. My intention
 is to try out a few different speed up techniques/practices and record their times. I have heard a few things thrown around 
 that can improve speed:
--numpy arrays [kinda obvious]
--multiprocessing/threading [how are they different/are they?, also-how do?]
--numba [JIT compiled python]
--cython [cdef stuff to make things a bit faster]
--cython wrapper to C[automatically generated C\/Python wrapper code]
--calling C code from python, returning values to python
--GPU offloading [I have a graphics card that I can abuse]
+*numpy arrays [kinda obvious]
+*multiprocessing/threading [how are they different/are they?, also-how do?]
+*numba [JIT compiled python]
+*cython [cdef stuff to make things a bit faster]
+*cython wrapper to C[automatically generated C\/Python wrapper code]
+*calling C code from python, returning values to python
+*GPU offloading [I have a graphics card that I can abuse]
 
 I am sure a few more things will come up during my module that I either hear at work or read about online.
 
@@ -42,6 +42,12 @@ the C code shared object and called srand from python and got identical points t
 I am hoping it doesn't bite me in the butt down the line, but it seemed okay. I intend to start the Module by rewriting the
 C code into vanilla python then timing it. It may already be fast but we will see...
 
+6/4/2022
+Implemented the shortest/max distance program in python. It is now in the notebook. Numbers were very close to what I was getting in C
+but I needed to change out its float declarations to doubles so that way the two would be more alike. They still differ by a few thousandths,
+but I will take it considering we're in a different language and not using datatypes that are identical. After I got it implemented,
+I started doing a basic optimization of it for my first speed up project. I will use numpy arrays next to see if they make it even faster.
+I am liking this module more than the first one because it feels way easier to get what I want coded up.
 
 ------------------------------------------------------------------------------------------------------------------
 
