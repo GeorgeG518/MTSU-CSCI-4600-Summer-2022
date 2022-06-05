@@ -21,13 +21,14 @@ instruction.
 A few years later, I now understand that python does not have to be slow *if you know what you are doing*. My intention
 is to try out a few different speed up techniques/practices and record their times. I have heard a few things thrown around 
 that can improve speed:
-*numpy arrays [kinda obvious]
-*multiprocessing/threading [how are they different/are they?, also-how do?]
-*numba [JIT compiled python]
-*cython [cdef stuff to make things a bit faster]
-*cython wrapper to C[automatically generated C\/Python wrapper code]
-*calling C code from python, returning values to python
-*GPU offloading [I have a graphics card that I can abuse]
+
+* numpy arrays [kinda obvious]
+* multiprocessing/threading [how are they different/are they?, also-how do?]
+* numba [JIT compiled python]
+* cython [cdef stuff to make things a bit faster]
+* cython wrapper to C[automatically generated C\/Python wrapper code]
+* calling C code from python, returning values to python
+* GPU offloading [I have a graphics card that I can abuse]
 
 I am sure a few more things will come up during my module that I either hear at work or read about online.
 
