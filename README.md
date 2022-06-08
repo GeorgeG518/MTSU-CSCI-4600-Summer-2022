@@ -114,7 +114,7 @@ This module will be more "research" focused. I want to look at all the ways you 
 The ideal capstone project would be to develop a program that can be ran using every method, and then have their timing results compared. 
 Here\'s a few options: https://www.cs.cmu.edu/~scandal/nesl/algorithms.html
                                             
-I like the idea of using Dr. Butler\'s convex hull program we did for systems. I can write up the algorithm from memory [unless I can get my CS account back] then implement it in python. As I research, I can just reimplement it with the new methods and keep them all in one notebook. 
+I like the idea of using Dr. Butler\'s ~~convex hull program~~ shortest/greatest distance program we did for systems. I can write up the algorithm from memory [unless I can get my CS account back] then implement it in python. As I research, I can just reimplement it with the new methods and keep them all in one notebook. 
   
 ### Module Three: The Math/Numerical Analysis Unit (June 19th-July 10th)
 Math is a huge part of my job, and I could definitely go for some improvement. I dread this module.
