@@ -50,6 +50,14 @@ but I will take it considering we're in a different language and not using datat
 I started doing a basic optimization of it for my first speed up project. I will use numpy arrays next to see if they make it even faster.
 I am liking this module more than the first one because it feels way easier to get what I want coded up.
 
+6/6/2022 and 6/7/2022
+Finished up the first part of the module where I am using libraries and different methods of writing code for speed ups.
+I was very suprised by Numba and encourage anybody interested in speeding up python to check it out. It is quite OP. 
+This weekend I plan to start the next part of the module which will focused on techniques that apply for most uses cases. 
+I plan on calling C code, doing some parallelization, calling C code from python [really already did that with the random function]
+and also looking at Cython. Cython may end up bringing me back to the first part of the module, because it may fit better there than in this part.
+The plan is to keep it in the python timing notebook and just keep that one going.
+
 ------------------------------------------------------------------------------------------------------------------
 
 # File List
