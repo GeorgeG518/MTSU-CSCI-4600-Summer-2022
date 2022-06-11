@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo RMB 8.705  16830.027
+
+echo "2 secs with -Ofast"
+echo "7 secs withOUT -Ofast"
+
+/usr/bin/time -p  ./p3 7 40000 1

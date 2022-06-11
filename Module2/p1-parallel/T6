@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo RMB 1.555  16965.943
+
+echo "6 secs with -Ofast"
+
+./p3 111 111000 3

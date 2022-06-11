@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16) 
+enable_language(C)
+find_package(Threads)
+add_compile_options(-g -Ofast)
+add_executable(p3 p3.c)
+target_link_libraries(p3 PRIVATE Threads::Threads)
