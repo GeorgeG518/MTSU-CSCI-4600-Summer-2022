@@ -58,6 +58,10 @@ I plan on calling C code, doing some parallelization, calling C code from python
 and also looking at Cython. Cython may end up bringing me back to the first part of the module, because it may fit better there than in this part.
 The plan is to keep it in the python timing notebook and just keep that one going.
 
+6/11/2022
+Started multiprocessing notebook and updated build system. Researching the best way to rejoin threads. 
+Should not be too bad past this point [famous last words]
+
 ------------------------------------------------------------------------------------------------------------------
 
 # File List
