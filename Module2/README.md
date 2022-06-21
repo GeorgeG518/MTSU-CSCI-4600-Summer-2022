@@ -62,6 +62,17 @@ The plan is to keep it in the python timing notebook and just keep that one goin
 Started multiprocessing notebook and updated build system. Researching the best way to rejoin threads. 
 Should not be too bad past this point [famous last words]
 
+6/16/2022-6/20/2022
+I have been having trouble getting the speed increases I want from my multiprocessing. I want to get it done so
+I can move to the math movement, but I do have some extra time considering I don't have to spend a week writing the
+paper, and I can take some time away from the Julia module at the end of the summer. I think getting multiprocessing 
+right is much more important than learning another coding language. It is very close and will run, but it doesn't
+actually speed anything up. Can't really tell why though. The logic is nearly the same as the C code considering 
+it's python, and it is indeed spawning processes. I am going to attempt to run it in as a regular python file tomorrow
+and maybe see if it's a jupyter notebook issue. Here's to hoping. Otherwise, I am not sure. I could try switching to threads
+if that doesn't work, but I think they suffer from the GIL
+
+
 ------------------------------------------------------------------------------------------------------------------
 
 # File List
