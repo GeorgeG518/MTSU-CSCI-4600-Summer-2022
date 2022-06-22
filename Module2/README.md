@@ -72,6 +72,9 @@ it's python, and it is indeed spawning processes. I am going to attempt to run i
 and maybe see if it's a jupyter notebook issue. Here's to hoping. Otherwise, I am not sure. I could try switching to threads
 if that doesn't work, but I think they suffer from the GIL
 
+6/21/2022
+Finished up parallel and jotted down some notes about it all. Turns out multiprocessing was working the whole time, but I couldn't see the effects
+of it because the regular python was so slow. Started the cython implementation but it requires some finesse with typing so it needs some more work
 
 ------------------------------------------------------------------------------------------------------------------
 
