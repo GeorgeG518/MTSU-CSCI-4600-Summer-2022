@@ -20,7 +20,7 @@ def calculateMinMax(points, max, min,start,numpoints):
     cdef void *ptr
     ptr = <void *>temp 
     calcMinMaxOfThread(ptr) 
-    return
+    return temp.max, temp.min
 
 cdef class pnt:
     cdef point p

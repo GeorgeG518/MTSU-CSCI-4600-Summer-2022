@@ -76,6 +76,12 @@ if that doesn't work, but I think they suffer from the GIL
 Finished up parallel and jotted down some notes about it all. Turns out multiprocessing was working the whole time, but I couldn't see the effects
 of it because the regular python was so slow. Started the cython implementation but it requires some finesse with typing so it needs some more work
 
+6/23/2022
+Finished the typing of cython just to say I did it, but I think I am going to have to come back with it. I need to really start the math 
+module, and I cannot sit here mucking for days with cython for speed increases that I can get with less effort using numba.
+I want to come back to it at some point, but all things considered, I enjoy the progress I have made in this module enough to call it quits.
+
+
 ------------------------------------------------------------------------------------------------------------------
 
 # File List
@@ -83,14 +89,26 @@ of it because the regular python was so slow. Started the cython implementation 
 Demonstrates the cimport into python but also shows how I am going to make arrays of points identical although they 
 use different random generation functions.
 
-## p1.c
+## p1-normal/p1.c
 Original C code I wrote for 3240 for the minimum maximum distance problem. Takes a seed and a number of points. 
+
+## p1-parallel/p3.c
+Parallel version of C code I wrote for 3240 for the minimum maximum distance problem. Takes a seed and a number of points. 
 
 ## pythontiming.ipynb
 I will be doing all of my timing code in here and marking it up as I go. It will serve a similar purpose to scratch.f90
+
+## pythonparallel.ipynb
+Contains all of my parallel programming stuff. Used multiprocessing library in combination with numpy.
 
 ## T? 
 All of the original Butler test files. I expect these to differ by a few thousandths because of the disparity in how
 C and python handle floating point arithmetic.
 
- 
+## setup.py
+Used to build the cython
+
+## minmax.pyx
+Cython "source" file.
+
+
