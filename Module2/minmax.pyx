@@ -1,16 +1,35 @@
-import minmax
-from minmax cimport point, calcMinMaxOfThread, arg 
 import cython
 
-def calculateMinMax(points, max, min,start,numpoints):
+cdef extern from "p3.c":
+    void *calcMinMaxOfThread(void *params)
 
-    calcMinMaxOfThread(& pyarg(points,max,min,start,numpoints)) 
+    cdef struct point:
+        double x 
+        double y
+        double z
+
+    cdef struct args:
+        point *points
+        double * MAX
+        double* MIN
+        int startIndex 
+        int numpoints
+
+def calculateMinMax(points, max, min,start,numpoints):
+    cdef pyarg temp = pyarg(points,max,min,start,numpoints)
+    cdef void *ptr
+    ptr = <void *>temp 
+    calcMinMaxOfThread(ptr) 
     return
 
 cdef class pnt:
+    cdef point p
     def __cinit__(self,double x, double y, double z):
-        self.cpoint = point(x,y,z)
-
-cdef pyarg(pnts, double maxptr, double minptr, int strt, int numpts):  
-    cdef double * cmin = & minptr
-    return arg(& pnts, &maxptr, cmin, strt,numpts)
+        self.p = point(x,y,z)
+    @property
+    def x(self):
+        return self.p.x
+cdef class pyarg:
+    cdef args obj
+    def __cinit__(self,point[:] pnts,double maxptr, double minptr, int strt, int numpts):
+        self.obj= args(&pnts, &maxptr, &cmin, strt,numpts)
