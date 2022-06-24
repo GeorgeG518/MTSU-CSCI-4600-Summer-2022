@@ -32,6 +32,24 @@ that can improve speed:
 
 I am sure a few more things will come up during my module that I either hear at work or read about online.
 
+# Final Thoughts
+I had way more fun with this module than I did the first one, not because I dislike Fortran, but instead because this module scratched 
+my itch for trying things and experimenting. I really enjoyed pushing Python to its limits, and was very overwhelmed by all of the 
+different ways you can speed the language up. I didn't quite touch all of the ways I wanted to, but I think with what I learned, I will be
+able to significantly make a dent in speed. 
+
+Multiprocessing was *very* easy to get going, and very conceptually similar to C threads. I was pleasantly suprised by how close the syntax
+was to the 
+
+I wish I could have coded some things myself with the GPU offloading. I looked into Tensor Flow and PyTorch to do it, but got so wrapped around the axle with cython and testing multiprocessing [which worked, but I did not realize it]that I never got to try it myself.
+
+Cython is kind of a weird situation. I did a project with Cython at work, so I did get exposed to it, but I couldn't get it working on my 
+machine because it was a tad bit more niche. I did not want to sink anymore time into it, so I am chucking it for now. 
+
+If I have extra time at the end of the summer, I want to experiment with ctypes to do some calls and also finish the cython implementation.
+
+I am kicking myself for not getting to GPU offloading, but I think I'll be able to squeeze it in at the end of the summer or in a module where I am ahead. Here is to hoping!
+
 
 # Daily Log
 6/2/2022
