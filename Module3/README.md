@@ -26,6 +26,9 @@ Started math module officially. Created linalgnotebook.ipynb
 Worked my way through vectors, nearly half way done with matrices. Taking simple ELI5 notes, and also cells showing how to program the operations
 I am talking about
 
+# 6/30
+Finished up some matrix terminology and also sent off my progress report. I am trying to keep up a lesson, example, code format for the notebook.
+Unrelated to the module, but I also setup Julia lang on my WSL
 
 ------------------------------------------------------------------------------------------------------------------
 
