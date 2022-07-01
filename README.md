@@ -98,7 +98,7 @@ This module will be considered "done" with a capstone project. It will essential
 
 Not going to really care about error checking like the other project.
 					    
-### Module Two: Speeding Up Python (May 29-June 19th)
+### Module Two: Speeding Up Python (May 29-June 23rd)
                                             
 Python is heavily used at work, and one of the most common things done with it is boosting speed.
 
@@ -116,7 +116,7 @@ Here\'s a few options: https://www.cs.cmu.edu/~scandal/nesl/algorithms.html
                                             
 I like the idea of using Dr. Butler\'s ~~convex hull program~~ shortest/greatest distance program we did for systems. I can write up the algorithm from memory [unless I can get my CS account back] then implement it in python. As I research, I can just reimplement it with the new methods and keep them all in one notebook. 
   
-### Module Three: The Math/Numerical Analysis Unit (June 19th-July 10th)
+### Module Three: The Math/Numerical Analysis Unit (June 23rd-July 14th)
 Math is a huge part of my job, and I could definitely go for some improvement. I dread this module.
 * Explore some ODE/PDE calculation in python and Fortran
 * How does that works with various libraries? 
@@ -125,14 +125,12 @@ Math is a huge part of my job, and I could definitely go for some improvement. I
 * Use cases for all of these
 
                                             
-### Module Four: Other Useful Stuff (July 10th-July 24th)
+### Module Four: Other Useful Stuff (July 14th-July 31st)
 This module is still a bit in the air...
-* I could learn Julia
+* I could learn Julia <--- **More than likely**
 * Python data visualization: matplotlib, seaborne
 * Data manipulation
-* Maybe CMake if i don\'t end up using it throughout the study
-                                            
-### Paper Week: (July 24th-July 31st)
+
 
 	
 
