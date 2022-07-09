@@ -30,6 +30,11 @@ I am talking about
 Finished up some matrix terminology and also sent off my progress report. I am trying to keep up a lesson, example, code format for the notebook.
 Unrelated to the module, but I also setup Julia lang on my WSL
 
+# 7/1/2022 - 7/8/2022
+Worked on pretty much linalg stuff the whole timeperiod. My git logs are a bit better at showing what I did day by day, but basically I worked
+on July 4th the most. That day I added the most content and got to solving systems of equations. On the 7th I finished some definitions and started the
+LU decomposition, and today I finished that and the inverse matrix stuff.
+
 ------------------------------------------------------------------------------------------------------------------
 
 # File List
