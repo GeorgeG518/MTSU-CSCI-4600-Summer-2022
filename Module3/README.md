@@ -22,7 +22,7 @@ I want to create jupyter notebooks that serve as examples of how to code the mat
 ## 6/27/2022 
 Started math module officially. Created linalgnotebook.ipynb
 
-##6/28
+## 6/28
 Worked my way through vectors, nearly half way done with matrices. Taking simple ELI5 notes, and also cells showing how to program the operations
 I am talking about
 
