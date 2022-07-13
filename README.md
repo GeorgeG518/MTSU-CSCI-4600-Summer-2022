@@ -127,10 +127,7 @@ Math is a huge part of my job, and I could definitely go for some improvement. I
                                             
 ### Module Four: Other Useful Stuff (July 14th-July 31st)
 This module is still a bit in the air...
-* I could learn Julia <--- **More than likely**
-* Python data visualization: matplotlib, seaborne
-* Data manipulation
-
+* I will be learning Julia
 
 	
 
