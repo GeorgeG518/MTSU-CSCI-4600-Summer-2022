@@ -45,6 +45,9 @@ In addition to taking notes about a lot of math, I also got exposed to LaTeX as 
 That had always been one of my more "ehh idk a lot about that" skills. Now I feel like I can do basic equations so that was a great
 skill to pick up. 
 
+Finally, I added two more notebooks to the module that may be useful. I finally fixed my taylor series program so that is in there,
+and I also added my old riemann sums calculator from Freshman year. I would like to one day clean that up and make it not so fresmany
+
 I am very pleased with the results of this Module, hopefully I will be able to keep up with more of the things they talk about when solving
 these complex engineering problems.
 
