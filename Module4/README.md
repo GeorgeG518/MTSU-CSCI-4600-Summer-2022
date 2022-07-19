@@ -13,7 +13,7 @@
     Pkg.add("IJulia")
     ```
 
-4. You are done. Now when you created a new jupyter notebook, you will have the option of creating a Julia notebook.
+4. You are done. Now when you create a new jupyter notebook, you will have the option of creating a Julia notebook.
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -22,6 +22,9 @@
 
 # Final Thoughts
 # Daily Log
+### 7/18
+Started the Julia notebook. REally enjoy it! I have covered some variable assignment stuff and a whole lot of operator stuff
+and math functions. Hopefully next session I will do file I/O, loops, and arrays.
 
 ------------------------------------------------------------------------------------------------------------------
 
