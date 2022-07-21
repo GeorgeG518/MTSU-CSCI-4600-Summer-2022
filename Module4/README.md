@@ -26,6 +26,10 @@
 Started the Julia notebook. REally enjoy it! I have covered some variable assignment stuff and a whole lot of operator stuff
 and math functions. Hopefully next session I will do file I/O, loops, and arrays.
 
+### 7/20
+Decided it would be best to break up that scratch notebook because it was starting to get too cumbersome to navigate. 
+I started the second scratch and talked about data types along with function decorators. Didn't get to work on too much though.
+
 ------------------------------------------------------------------------------------------------------------------
 
 # File List
