@@ -30,6 +30,14 @@ and math functions. Hopefully next session I will do file I/O, loops, and arrays
 Decided it would be best to break up that scratch notebook because it was starting to get too cumbersome to navigate. 
 I started the second scratch and talked about data types along with function decorators. Didn't get to work on too much though.
 
+### 7/24
+Finished up my scratch part two notebook. I think I am in a good spot to start doing some
+actual julia programs. I want to rewrite a few that I have done in the study as it would make for easy comparison.
+I think my first one I will look at is the min max distance program from the speeding up python module. that would let me get some practice
+calling C code from Julia, but also it would allow me to show the speed Julia has.
+
+
+
 ------------------------------------------------------------------------------------------------------------------
 
 # File List
