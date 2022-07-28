@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo RMB 526.986  15183.808
+echo Julia
+/usr/bin/time -p  julia mod2injulia.jl  7   100
+
+echo C
+/usr/bin/time -p  ./p1 7   100
