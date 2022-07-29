@@ -44,6 +44,13 @@ The only thing I wasn't really pleased about was the cumbersome function call ne
 quikcly about how to do it in the pythonic way where you can have a handle to a library and call it that way. The syntax
 just ended up looking clunky
 
+###7/28/2022 
+Felt like I needed to do some more number crunching exercises so I figured I would implement the Gauss seidel method of
+solving systems of equations. I meant to do it during the python math module but I did not. In order to do that I needed to
+take some more notes on Linear Algebra methods, so I went ahead and made a third scratch notebook. Not sure what I need to do now,
+I figured something reading in files would be neat and useful. Getting down to the wire here
+
+
 ------------------------------------------------------------------------------------------------------------------
 
 # File List
@@ -51,8 +58,13 @@ just ended up looking clunky
 All of the test files for running the Julia code and comparing its timings to C
 
 ### scratchpt....
-Both of the scratch notebooks act as note keeping locations for all my major Julia learning. 
+The three scratch notebooks act as note keeping locations for all my major Julia learning. 
 
 ### mod2injulia.jl
 Exactly what it says. It is the Module 2 shortest distance script implemented in Julia, no multicore 
+
+### gauss-seidel.jl
+Julia implementaiton of Gauss Seidel method, fairly simple. Based off of a mix of the Python book's implementation
+and also the Numerical methods of Scientific Computing  book I have.
+
 
