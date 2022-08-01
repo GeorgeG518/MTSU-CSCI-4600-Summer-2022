@@ -5,8 +5,7 @@ This will expand as I go, really just a overhead view
 * git bash
   * Very useful because it gives me git, linux CLI, and linux workflows all on windows
  
-* Julia lang [if I have time]
-  * If I have time by the end of the semester, I want to learn Julia.
+* Julia lang 
   * It appears that it is in a position to find use at the base if more people know about it...
     * Speed of Fortran but the ease of use of Python? Give it to me, please. 
     * Already being used by NASA as a replacement for Matlab and Simulink, so government is indeed adopting it.
@@ -50,6 +49,8 @@ This will expand as I go, really just a overhead view
 ### Linear Algebra 2nd Edition by Lipschutz
 * I got this book at Goodwill a few years ago before I went to college. I haven't had a LA class so it will be used as reference for any kind of stuff pertaining to it that
 
+### Numerical Methods for Scientific Computing
+* It has code examples in Julia, Python and also Matlab. Very nice book that is available for free here: https://www.equalsharepress.com/media/NMFSC.pdf
 	
 ## Online:
 	
@@ -125,9 +126,8 @@ Math is a huge part of my job, and I could definitely go for some improvement. I
 * Use cases for all of these
 
                                             
-### Module Four: Other Useful Stuff (July 14th-July 31st)
-This module is still a bit in the air...
-* I will be learning Julia
+### Module Four: Julia(July 14th-July 31st)
+I ended up learning Julia in this module. It is a numerically minded language that is in a position to be a new workhorse in the scientific community.
 
 	
 
