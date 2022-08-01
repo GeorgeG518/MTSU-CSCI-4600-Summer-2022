@@ -1,4 +1,16 @@
-This will expand as I go, really just a overhead view
+# End of the Summer Thoughts
+Module One was a great success because I got to learn more about Fortran, the mysterious and ancient language that doesn't actually feel
+all that ancient and mysterious. I did most of my work in Fortran90 and most of it pertained to number crunching. It wasn't too bad, but in hindsight
+I don't think Fortran is my most favorite language to code in. Way better than MATLAB, not as good as Julia. Python and C above all.
+
+Module Two was my favorite module. I did a lot of python optimization and learned a lot of new methods of speeding it up. The multicore stuff was extremely rewarding because I didn't
+realize that python made it so easy. I had a lot of fun in that module because it scratched my inquisitive itch that is scratched by "just trying things out". It was very rewarding
+to get that python code as fast as C.
+
+Module Three was very rewarding, and most memorable. I did a lot of math note taking, learned LaTeX and also did some work that was immediately useful at work. 
+My work with interpolation came in handy because I actually used it in my project and gave us a significant leap.
+
+Module Four was also very nice because I had a lot of fun learning Julia.
 
 # 1. Environment Description:
 ## Installed Packages:
