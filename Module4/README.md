@@ -30,9 +30,17 @@ It's got some strange quirks when it comes to type annotations and array slicing
 language yet to know the best ways to go about it. I was pleased with the performance and want to tinker with it some more to see if I can get it
 even faster...because as far as Julia code goes mine is sloppy. I think if you enjoy Fortran, and also enjoy python, Julia might be a nice inbetween
 that would be interesting to tinker with. I personally want to get involved with the community and wouldn't mind making my own packages. One that comes
-to mind is doing something with graphics. Of course, Julia is open source so I could always do a merge request for an open issue...I don't know
+to mind is doing something with graphics. Of course, Julia is open source so I could always do a merge request for an open issue as well. It is also not out of the
+question to make tutorials or something like that once I got good enough.
 
+I do still feel like I need to do more with Julia. I've come up with a shortlist of things I need to do:
+* Interpolation
+* GPU OFfloading
+* ODE calculation
+* Machine Learning
 
+I can't imagine that they would be too bad, but I don't have the time to get all of them in before the end of the study [the next few days]. I am very glad that 
+I ended up finding a nice Julia book that had the same general rigor of Python Programming and Numerical Methods. That other one just was not doing it for me.
 
 # Daily Log
 ### 7/18
