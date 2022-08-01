@@ -18,9 +18,22 @@
 -----------------------------------------------------------------------------------------------------------------
 
 # A Few Things About the Module
+I first heard of Julia on reddit as being an interesting language to stick your toes into. It seemed like once I heard
+about it, I heard about it every waking day. I figured it would be interesting to learn as an alternative to Fortran
+or python. 
+
 ------------------------------------------------------------------------------------------------------------------
 
 # Final Thoughts
+Julia is easily a top three language for me now. It has been able to do everything I need it to do, and it has been fast while doing it.
+It's got some strange quirks when it comes to type annotations and array slicing, but I have a feeling i am just not well versed enough in the
+language yet to know the best ways to go about it. I was pleased with the performance and want to tinker with it some more to see if I can get it
+even faster...because as far as Julia code goes mine is sloppy. I think if you enjoy Fortran, and also enjoy python, Julia might be a nice inbetween
+that would be interesting to tinker with. I personally want to get involved with the community and wouldn't mind making my own packages. One that comes
+to mind is doing something with graphics. Of course, Julia is open source so I could always do a merge request for an open issue...I don't know
+
+
+
 # Daily Log
 ### 7/18
 Started the Julia notebook. REally enjoy it! I have covered some variable assignment stuff and a whole lot of operator stuff
