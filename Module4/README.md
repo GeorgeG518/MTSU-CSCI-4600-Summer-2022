@@ -44,11 +44,20 @@ The only thing I wasn't really pleased about was the cumbersome function call ne
 quikcly about how to do it in the pythonic way where you can have a handle to a library and call it that way. The syntax
 just ended up looking clunky
 
-###7/28/2022 
+### 7/28/2022 
 Felt like I needed to do some more number crunching exercises so I figured I would implement the Gauss seidel method of
 solving systems of equations. I meant to do it during the python math module but I did not. In order to do that I needed to
 take some more notes on Linear Algebra methods, so I went ahead and made a third scratch notebook. Not sure what I need to do now,
 I figured something reading in files would be neat and useful. Getting down to the wire here
+
+### 7/31/2022
+Finishing up my last few projects in Julia. I decided I needed to do something with File I/O so i implemented a more general case
+of the Gauss method. While working on making it general, I actually caught a mistake from the Python implementation that I 
+derived the Julia method from. The values being converged to in the book were not the correct values of the actual system because it
+was dividing by the wrong value. The more general method works for the input file I used. 
+
+I had heard Julia's plotting capabilities were pretty similar to python's so I figured i would give it a crack. I basically reimplemented a 
+javascript program I did in CSCI 4250 and plotted the stuff in Julia's module and not a gl context. Turned out pretty good!
 
 
 ------------------------------------------------------------------------------------------------------------------
@@ -66,5 +75,11 @@ Exactly what it says. It is the Module 2 shortest distance script implemented in
 ### gauss-seidel.jl
 Julia implementaiton of Gauss Seidel method, fairly simple. Based off of a mix of the Python book's implementation
 and also the Numerical methods of Scientific Computing  book I have.
+
+### fern.jl
+A Julia program that creates a Fern and plots it in a window.
+
+### fileio.jl
+More general method of gauss-seidel but now it supports file input for the matrix.
 
 
